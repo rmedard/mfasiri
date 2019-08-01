@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+function mfasiri_preprocess_links(&$variables)
+{
+    $variables['fr'] = file_create_url(drupal_get_path('theme', 'mfasiri') . '/templates/flags/fr.png');
+    $variables['en'] = file_create_url(drupal_get_path('theme', 'mfasiri') . '/templates/flags/en.png');
+    $variables['nl'] = file_create_url(drupal_get_path('theme', 'mfasiri') . '/templates/flags/nl.png');
+}

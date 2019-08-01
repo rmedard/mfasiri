@@ -1,0 +1,68 @@
+// Bootstrap Framework.
+@import 'bootstrap';
+
+// Drupal Bootstrap Styles.
+@import 'drupal-bootstrap';
+
+// Bootswatch overrides.
+@import 'bootswatch/variables';
+@import 'bootswatch/bootswatch.less';
+
+// Overrides
+@import 'variable-overrides';
+
+
+body {
+
+  h2, h3 {
+    margin-top: 5px;
+  }
+
+  .page-header {
+    text-align: center;
+  }
+
+  .logo img {
+    max-height: 45px;
+  }
+
+  section.block-language {
+    display: flex;
+    .language-link {
+      color: white;
+    }
+  }
+
+  #vertical-menu-block {
+    nav > ul > li {
+      border-bottom: 1px solid white;
+      a {
+        font-weight: bold;
+        color: @text-color;
+      }
+      a:hover, a:focus {
+        background-color: lighten(@brand-primary, 30%);
+      }
+      a.is-active {
+        color: white;
+        background-color: @brand-primary;
+      }
+    }
+  }
+
+  div.carousel-caption {
+    background: fade(@text-color, 70%);
+  }
+
+  div.region-navigation-right {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  footer {
+    background: @text-color;
+    color: white;
+  }
+}

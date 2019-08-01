@@ -1,0 +1,26 @@
+core: 8.x
+type: theme
+base theme: bootstrap
+screenshot: mfasiri_screenshot.png
+
+name: 'Mfasiri'
+description: 'Mfasiri custom theme based on Bootstrap 3.'
+package: 'Bootstrap'
+
+regions:
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  navigation_right: 'Navigation Right'
+  header: 'Top Bar'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
+libraries-extend:
+  bootstrap/framework:
+    - mfasiri/framework
